@@ -1,0 +1,152 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AgnusDeiGabriel/21oktob/blob/main/kou_python1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "non = input(\"kijan ou rele:\")\n",
+        "\n",
+        "kantite = int(input(\"konbyen fwa poum repete non an ?\"))\n",
+        "\n",
+        "for i in range(kantite):\n",
+        "    print(non)\n",
+        "\n",
+        "if kantite > 5:\n",
+        "  print(\"ou renmn non sa anpil!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7iMW3H6dx5io",
+        "outputId": "2875d743-8334-4ae4-d390-56c674fa7dce"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "kijan ou rele:lee\n",
+            "konbyen fwa poum repete non an ?4\n",
+            "lee\n",
+            "lee\n",
+            "lee\n",
+            "lee\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "while True:\n",
+        "  n1 = float(input(\"antre premye num lan:\"))\n",
+        "  n2 = float(input(\"antre dezyem num lan:\"))\n",
+        "\n",
+        "  operation = input(\"ki operation? (add/ mult):\")\n",
+        "\n",
+        "  if operation == \"add\":\n",
+        "    rezilta = n1 + n2\n",
+        "    print(\"rezilta se:\", rezilta)\n",
+        "  elif operation == \"mult\":\n",
+        "    rezilta = n1 * n2\n",
+        "    print(\"rezilta se:\", rezilta)\n",
+        "  else:\n",
+        "    print(\"operation sa pa egziste.\")\n",
+        "\n",
+        "  kontinye = input(\"ou vle kontinye? (wi/non):\" )\n",
+        "\n",
+        "  if kontinye.lower() == \"non\":\n",
+        "      print(\"mesi paske ou itilize pwogram lan\")\n",
+        "\n",
+        "      break\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Q29nG3sUy6Om",
+        "outputId": "b1d3c121-13cb-4fcd-f490-d617f20ff8c9"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "antre premye num lan:98\n",
+            "antre dezyem num lan:79\n",
+            "ki operation? (add/ mult):add\n",
+            "rezilta se: 177.0\n",
+            "ou vle kontinye? (wi/non):wi\n",
+            "antre premye num lan:898\n",
+            "antre dezyem num lan:5678\n",
+            "ki operation? (add/ mult):mult\n",
+            "rezilta se: 5098844.0\n",
+            "ou vle kontinye? (wi/non):non\n",
+            "mesi pou rezilta\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import random\n",
+        "\n",
+        "chif_sekre = random.randint(1, 10)\n",
+        "\n",
+        "for chans in range(3):\n",
+        "    devine = int(input(\"Antre chif ant 1 ak 10:\"))\n",
+        "    if devine == chif_sekre:\n",
+        "      print(\"bravo! ou jwenn li.\")\n",
+        "      break\n",
+        "    else:\n",
+        "        print(\"se pa li.\")\n",
+        "else:\n",
+        "    print(f\"ou pedi. chif la te: {chif_sekre}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "F5AtxYqV2OVg",
+        "outputId": "f134781d-6101-4dfd-d121-51f4d7361c70"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Antre chif ant 1 ak 10:9\n",
+            "bravo! ou jwenn li.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
